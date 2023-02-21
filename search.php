@@ -27,23 +27,34 @@
   <label for="name">Mã sinh viên:</label>
   <input type="text" name="Ma_sinh_vien" id="Ma_sinh_vien">
   <input type="submit" value="Tìm kiếm">
+  <input type="submit" name="show_all" value="Tất cả">
 </form>
 <?php
     // Lấy tên sinh viên được nhập từ form
     include("data.php");
     $Ma_sinh_vien = $_POST['Ma_sinh_vien'];
+    $show_all = isset($_POST['show_all']);
     
-    // Tìm kiếm sinh viên theo mã sinh viên
-    $timkiem = array_search($Ma_sinh_vien, array_column($list_students, 'Ma_sinh_vien'));
-    if ($timkiem === false) {
-        echo "Không tìm thấy sinh viên nào.";
-    } else {
-        $result = $list_students[$timkiem];
-        // Hiển thị kết quả lên bảng
+    if ($show_all) {
+        // Hiển thị tất cả sinh viên
         echo "<table>";
         echo "<tr><th>Tên sinh viên</th><th>Giới tính</th><th>Quê quán</th><th>Năm sinh</th><th>Nghành học</th><th>Mã sinh viên</th></tr>";
-        echo "<tr><td>".$result['Ten_sinh_vien']."</td><td>".$result['Gioi_tinh']."</td><td>".$result['Que_quan']."</td><td>".$result['Nam_sinh']."</td><td>".$result['Nganh_hoc']."</td><td>".$result['Ma_sinh_vien']."</td></tr>";
+        foreach ($list_students as $result) {
+            echo "<tr><td>".$result['Ten_sinh_vien']."</td><td>".$result['Gioi_tinh']."</td><td>".$result['Que_quan']."</td><td>".$result['Nam_sinh']."</td><td>".$result['Nganh_hoc']."</td><td>".$result['Ma_sinh_vien']."</td></tr>";
+        }
         echo "</table>";
+    } else {
+        $timkiem = array_search($Ma_sinh_vien, array_column($list_students, 'Ma_sinh_vien'));
+        if ($timkiem === false) {
+            echo "Không tìm thấy sinh viên nào.";
+        } else {
+            $result = $list_students[$timkiem];
+            // Hiển thị kết quả lên bảng
+            echo "<table>";
+            echo "<tr><th>Tên sinh viên</th><th>Giới tính</th><th>Quê quán</th><th>Năm sinh</th><th>Nghành học</th><th>Mã sinh viên</th></tr>";
+            echo "<tr><td>".$result['Ten_sinh_vien']."</td><td>".$result['Gioi_tinh']."</td><td>".$result['Que_quan']."</td><td>".$result['Nam_sinh']."</td><td>".$result['Nganh_hoc']."</td><td>".$result['Ma_sinh_vien']."</td></tr>";
+            echo "</table>";
+        }
     }
 ?>
 </body>
