@@ -1,72 +1,72 @@
 <?php
 $list_students = array(
     [
-        "Ma_sinh_vien" => "1"
-,        "Ten_sinh_vien" => "Dexter Will",
+        "Ma_sinh_vien" => "1",
+        "Ten_sinh_vien" => "Dexter Will",
         "Gioi_tinh" => "Transexual person",
         "Que_quan" => "Greeley",
         "Nam_sinh" => "1948-05-26T04 =>06 =>24.500Z",
         "Nganh_hoc" => "Lead Response Agent",
     ],
     [
-        "Ma_sinh_vien" => "2"
-,        "Ten_sinh_vien" => "Emma Towne",
+        "Ma_sinh_vien" => "2",
+        "Ten_sinh_vien" => "Emma Towne",
         "Gioi_tinh" => "Demigender",
         "Que_quan" => "West Reilly",
         "Nam_sinh" => "1981-07-21T06 =>24 =>47.789Z",
         "Nganh_hoc" => "Future Tactics Executive",
     ],
     [
-        "Ma_sinh_vien" => "3"
-,        "Ten_sinh_vien" => "Victor Miller",
+        "Ma_sinh_vien" => "3",
+        "Ten_sinh_vien" => "Victor Miller",
         "Gioi_tinh" => "Neutrois",
         "Que_quan" => "Donnymouth",
         "Nam_sinh" => "1987-10-07T14 =>09 =>47.796Z",
         "Nganh_hoc" => "Product Brand Liaison",
     ],
     [
-        "Ma_sinh_vien" => "4"
-,        "Ten_sinh_vien" => "Kendra Mueller",
+        "Ma_sinh_vien" => "4",
+        "Ten_sinh_vien" => "Kendra Mueller",
         "Gioi_tinh" => "Hermaphrodite",
         "Que_quan" => "North Dion",
         "Nam_sinh" => "1961-04-11T22 =>27 =>20.857Z",
         "Nganh_hoc" => "Global Response Coordinator",
     ],
     [
-        "Ma_sinh_vien" => "5"
-,        "Ten_sinh_vien" => "Agnes Robel",
+        "Ma_sinh_vien" => "5",
+        "Ten_sinh_vien" => "Agnes Robel",
         "Gioi_tinh" => "Transexual woman",
         "Que_quan" => "West Michelle",
         "Nam_sinh" => "1993-10-10T04 =>13 =>28.909Z",
         "Nganh_hoc" => "Investor Identity Representative",
     ],
     [
-        "Ma_sinh_vien" => "6"
-,        "Ten_sinh_vien" => "Mrs. Jenna Hagenes",
+        "Ma_sinh_vien" => "6",
+        "Ten_sinh_vien" => "Mrs. Jenna Hagenes",
         "Gioi_tinh" => "Genderqueer",
         "Que_quan" => "Ornfield",
         "Nam_sinh" => "1943-09-27T20 =>48 =>09.807Z",
         "Nganh_hoc" => "Principal Directives Director",
     ],
     [
-        "Ma_sinh_vien" => "7"
-,        "Ten_sinh_vien" => "Miss Jacquelyn Will",
+        "Ma_sinh_vien" => "7",
+        "Ten_sinh_vien" => "Miss Jacquelyn Will",
         "Gioi_tinh" => "T* woman",
         "Que_quan" => "Hillscester",
         "Nam_sinh" => "1997-04-24T20 =>58 =>32.922Z",
         "Nganh_hoc" => "Global Metrics Architect",
     ],
     [
-        "Ma_sinh_vien" => "8"
-,        "Ten_sinh_vien" => "Wayne Mitchell",
+        "Ma_sinh_vien" => "8",
+        "Ten_sinh_vien" => "Wayne Mitchell",
         "Gioi_tinh" => "FTM",
         "Que_quan" => "Albuquerque",
         "Nam_sinh" => "1954-06-03T10 =>20 =>24.139Z",
         "Nganh_hoc" => "National Solutions Technician",
     ],
     [
-        "Ma_sinh_vien" => "9"
-,        "Ten_sinh_vien" => "Camille Osinski",
+        "Ma_sinh_vien" => "9",
+        "Ten_sinh_vien" => "Camille Osinski",
         "Gioi_tinh" => "Xenogender",
         "Que_quan" => "North Davefurt",
         "Nam_sinh" => "1979-04-25T19 =>59 =>12.844Z",

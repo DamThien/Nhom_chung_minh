@@ -10,20 +10,9 @@
 
 <body>
     <?php  
-        include("data.php"); 
-        $l = count($list_students);
-        echo $l;
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $getdata = [
-                "Ma_sinh_vien" => $_POST["ID"],
-                "Ten_sinh_vien" => $_POST["Name"],
-                "Gioi_tinh" => $_POST["Gender"],
-                "Que_quan" => $_POST["Home"],
-                "Nam_sinh" => $_POST["Birthday"],
-                "Nganh_hoc" => $_POST["Job"],
-            ];
-            $list_students[count($list_students)] = $getdata;
-        } 
+        // include("data.php"); 
+        $json = file_get_contents('data.json');
+        $list_students = json_decode($json,true);
     ?>
     <form action="" method="post">
         <table>
@@ -87,7 +76,21 @@
             <td><button>Sửa</button> <button>Xóa</button></td>
         </tr>
         <?php }
-        include("search.php")
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+            $getdata = [
+                "Ma_sinh_vien" => $_POST["ID"],
+                "Ten_sinh_vien" => $_POST["Name"],
+                "Gioi_tinh" => $_POST["Gender"],
+                "Que_quan" => $_POST["Home"],
+                "Nam_sinh" => $_POST["Birthday"],
+                "Nganh_hoc" => $_POST["Job"],
+            ];
+            $list_students[count($list_students)] = $getdata;
+        }
+        $list_students = json_encode($json);
+        $fp = fopen('data.json', 'a');
+        fwrite($fp, json_encode($list_students));
+        fclose($fp)
         ?>
     </table>
 
